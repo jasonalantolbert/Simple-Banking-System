@@ -47,7 +47,7 @@ class CreditCard:
             # This while loop generates the account identifier.
             # The account identifier must be unique, so the loop runs as long as identifier_is_unique is false
             # (or if account_identifier is falsy, which will be the case if the program has not yet tried
-            # to generate an identifier for the instance of the class.
+            # to generate an identifier for the instance of the class.)
 
             # Generates a random six-digit integer to be the account_identifier.
             self.account_identifier = f"{random.randint(100000000, 999999999)}"
@@ -63,7 +63,7 @@ class CreditCard:
             # This method uses the Luhn algorithm to determine the checksum for the card number.
             # number: the number for which a checksum is to be generated
             # digit_list: an initially empty list intended to contain each digit of the number. Using a list allows
-            # the program to easily perform the necessary mathematical operations on the number.
+            # the program to easily perform the necessary mathematical operations on each digit.
             # control_number: the number used to generate the checksum. Initially, this is set to 0.
             digit_list = []
             control_number = 0
